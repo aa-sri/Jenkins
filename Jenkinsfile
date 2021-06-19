@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('gitcheckout') {
             steps {
-                git branch: 'main', credentialsId: 'd12662da-ddb5-4fc0-8366-5032015ac591', url: 'https://github.com/aa-sri/DockerFile'
-                git branch: 'main', url: 'https://github.com/aa-sri/DockerFile.git'
+				git branch: 'main', url: 'https://github.com/aa-sri/Jenkins.git'
             }
         }
 		stage('docker build & tag') {
