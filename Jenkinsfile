@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('gitcheckout') {
             steps {
-				git branch: 'main', url: 'https://github.com/aa-sri/Jenkins/tree/main/DockerFile'
+				git branch: 'main', url: 'https://github.com/aa-sri/Jenkins.git'
             }
         }
 		stage('docker build & tag') {
